@@ -28,3 +28,11 @@
 #for i in range(len(l) - len(newL)):
 #    newL.append(0)
 #print(newL)
+
+
+#Rotate a list to the right by k positions.
+l = [1, 2, 3, 4, 5]
+k = int(input("Enter number of rotations"))
+k = k % len(l)
+l = l[-k:] + l[:-k]
+print(l)
